@@ -1,98 +1,151 @@
 <!DOCTYPE html>
+<!-- use css in this file  -->
 <html>
-<head> 
-    <!-- 1. Create Page Structure -->
-       <link rel="icon"  href="profile.jpg">
+<head>
+    <!-- 1 page structure  -->
     <title>Ayesha Qayyum - Graphic Designer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            background-color: #964caf;
+            color: white;
+            padding: 20px 0;
+        }
+        section {
+            max-width: 800px;
+            margin: 10px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 20px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            border: 3px solid #4CAF50;
+        }
+       
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #8e4caf;
+            color: white;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- 2. Header section -->
+    <!--2 Header Section -->
     <header>
-        <h1>Ayesha Qyuum</h1>
-        <h3>Creative Graphic Designer Based In Lahore</h3>
+        <h1>Ayesha Qayyum</h1>
+        <h2>Creative Graphic Designer based in Lahore</h2>
     </header>
-    <!-- 3. Image section  -->
-        <img src="https://i.pinimg.com/736x/82/47/0b/82470b4ed44c3edacfcd4201e2297050.jpg" 
-        alt="Profile Picture of Ayesha " height="200" width="200">
 
-    <section>  
-        <!-- 4. About Scetion  -->
-        <h2>About Me</h2>
-        <p>Ayesha Qayyum is a passionate Graphic Designer with over 5 years of experience creating modern, creative, and impactful designs.</p>
-        <p>Throughout her career, Ayesha has worked on a wide range of projects, from logo design and brand identity to social media campaigns and website graphics. She combines creativity with attention to detail, ensuring that every design reflects both professionalism and originality.</p>
-
+    <!-- 3 Image Section -->
     <section>
-        <!-- 5. Skills Section -->
+        <img src="https://i.pinimg.com/736x/82/47/0b/82470b4ed44c3edacfcd4201e2297050.jpg" 
+             alt="Profile Picture of Ayesha " height="200" width="200">
+    </section>
+
+    <!--4. About Section -->
+    <section>
+        <h3>About Me</h3>
+        <p>I am Ayesha Qayyum, a passionate and creative graphic designer with over 5 years of experience in branding, digital illustrations, and visual communication. I strive to bring unique and innovative ideas to every project I work on.</p>
+        <p>My expertise lies in developing visually compelling designs for print and digital media, ensuring high-quality results and timely delivery.</p>
+        <p>I have worked with multiple agencies and clients to craft designs that help brands stand out.</p>
+    </section>
+
+    <!--5 Skills Section -->
+    <section>
         <h3>Skills</h3>
         <ul>
             <li>Adobe Photoshop</li>
             <li>Adobe Illustrator</li>
             <li>Figma</li>
-            <li>Logo  Design</li>
+            <li>Logo Design</li>
             <li>Web Design</li>
         </ul>
     </section>
 
+    <!--6 Portfolio Section  -->
     <section>
-        <!-- 6. Portfolio Section -->
         <h3>Portfolio</h3>
         <table border="1" cellpadding="10">
-                <tr>
-                    <th>Project Name</th>
-                    <th>Year</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>Brand Design</td>
-                    <td>2023</td>
-                    <td>Created a full branding package.</td>
-                </tr>
-                <tr>
-                    <td>Website Graphics</td>
-                    <td>2024</td>
-                    <td>Designed banners, product images.</td>
-                </tr>
-                <tr>
-                    <td>Social Media post</td>
-                    <td>2025</td>
-                    <td>Developed a social media marketing campaign.</td>
-                </tr>
+            <tr>
+                <th>Project Name</th>
+                <th>Year</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Brand Design</td>
+                <td>2023</td>
+                <td>Created a full branding package.</td>
+            </tr>
+            <tr>
+                <td>Website Graphics</td>
+                <td>2024</td>
+                <td>Designed banners, product images.</td>
+            </tr>
+            <tr>
+                <td>Social Media Post</td>
+                <td>2025</td>
+                <td>Developed a social media marketing campaign.</td>
+            </tr>
         </table>
     </section>
-    
+
+    <!--7 Contact Form-->
     <section>
-        <!-- 7. Contact foorm  -->
         <h3>Contact Me</h3>
         <form>
             <label>Full Name :</label>
             <input type="text" placeholder="Enter Full Name"><br><br>
 
             <label>Email :</label>
-            <input type="email" placeholder="Enter Email Address">
-            <br><br>
+            <input type="email" placeholder="Enter Email Address"><br><br>
 
-             <label>Message :</label> <br>
-            <textarea rows="5" cols="20"></textarea>
-            <br><br>
+            <label>Message :</label><br>
+            <textarea rows="5" cols="20"></textarea><br><br>
 
-            <label>Contect Type :</label>
+            <label>Contact Type :</label>
             <input type="radio" name="id"> Personal
-            <input type="radio" name="id"> Business
-            <br><br>
+            <input type="radio" name="id"> Business<br><br>
 
             <label>Availability :</label>
             <input type="checkbox"> Morning
             <input type="checkbox"> Afternoon
-            <input type="checkbox"> Evening
-            <br><br>
+            <input type="checkbox"> Evening<br><br>
 
             <input type="reset" value="RESET">
             <input type="submit" value="SUBMIT">
-         </form>
+        </form>
     </section>
 
-    <!--8. Footer Section -->
+    <!--8  Footer Section -->
     <footer>
         <p>© 2025 Ayesha Qayyum</p>
         <p>
@@ -104,3 +157,4 @@
 
 </body>
 </html>
+
